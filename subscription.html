@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Subscription</title>
+<link rel="stylesheet" href="/style6.css">
+</head>
+<body>
+<header>
+<script>
+// Function to ensure only one checkbox is selected
+function checkPlan(selectedCheckbox) {
+    var checkboxes = document.getElementsByClassName("box");
+
+    // Uncheck all other checkboxes
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] !== selectedCheckbox) {
+            checkboxes[i].checked = false;
+        }
+    }
+}
+</script>
+        <nav class="navbar">
+            <div class="navbar_brand">
+                <img src="/img/brandlogo.png" alt="logo" class="brand_logo">
+            </div>
+        </nav>
+    </header>
+    <main>
+    <section class="first">
+        <div class="form_container">
+            <h1>Change Streaming Plan</h1>
+            <div class="input_field">
+                <form action="/perimumuser" method="get" th:object ="${subvalue}">
+                
+                 <div>
+                        <input type="checkbox" class="box" id="basicPlan" value="1month" name="subscription" onclick="checkPlan(this)">
+                        <span><strong>Basic Plan [SD 480p]</strong> <i>1 month subscription $400/-</i></span>
+                    </div>
+                   <div>
+                        <input type="checkbox" class="box" id="standardPlan" value="5month" name="subscription" onclick="checkPlan(this)">
+                        <span><strong>Standard Plan [Full HD 1080p]</strong> <i>5 month subscription $800/-</i></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="box" id="premiumPlan" value="1year" name="subscription" onclick="checkPlan(this)">
+                        <span><strong>Premium Plan [Ultra HD 4k and HDR]</strong> <i>1 year subscription $1500/-</i></span>
+                    </div> 
+            
+                    <div class="input_field_container">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" class="input_text_field" required style="padding-left: 10px;"  >
+                        <br>
+                        <input type="submit" value="Subscription" class="subscription_button">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer_row_1">
+            <h4>Questions? Call 000-800-919-1694</h4>
+        </div>
+        <div class="footer_row_2">
+            <div class="column-1">
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Terms of Use</a></p>
+                <p><a href="#">Cookie Preferences</a></p>
+            </div>
+            <div class="column-2">
+                <p><a href="#">Help Centre</a></p>
+                <p><a href="#">Privacy</a></p>
+                <p><a href="#">Corporate Information</a></p>
+            </div>
+        </div>
+        <div class="footer_row_3">
+            <div class="dropdown-container">
+                <i class="fa fa-globe" id="globe"></i>
+                <select name="languages" id="languagesSelect" class="language_drop_down">
+                    <option value="English" selected>English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+        </div>
+     </footer>
+</main>
+</body>
+</html>

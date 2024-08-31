@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="icon" href="/img/icon.jpeg">
+<title>Netflix</title>
+    <link rel="stylesheet" href="style5.css">
+    <!-- for globe image -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black" id="color">
+            <div class="container-fluid">
+                <div class="netflix-logo-container">
+                    <img src="/img/brandlogo.png" alt="logo" class="logo-brand">
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+			   		 <li class="nav-item" id="textcolour">
+                    	<a class="nav-link" href="#">Home</a>
+                	 </li>
+                     <li class="nav-item dropdown" id="textcolour">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Browse movies
+                         </a>
+                        <ul class="dropdown-menu" style="background-color: black;">
+                          <li><a class="dropdown-item" href="#">BollyWood</a></li>
+                          <li><a class="dropdown-item" href="#">HollyWood</a></li>
+                          <li><a class="dropdown-item" href="#">MollyWood</a></li>
+                        </ul>
+                     </li>
+                 
+                 <li class="nav-item" id="textcolour">
+                    <a class="nav-link active" aria-current="page" href="#">Kids</a>
+                 </li>
+                <li class="nav-item " id="textcolour" style="padding-left:520px; margin-right:12px;">
+                    <a class="nav-link bg-danger p-2 text-white fw-bold rounded-2" href="/subscription.html">Get subscription</a>
+                </li>
+ 				<li class="nav-item dropdown" id="textcolour">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span th:text="${username}" class="text-white"></span> 
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: black;">
+       							<li> <a class="nav-link" href="/index2.html">Log out</a></li>
+                        </ul>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="all-items">
+            <h3 class="title" style="padding-top: 2%;">Popular on Netflix</h3>
+            <div class="first_row">
+                <div class="border-line">
+                    <div class="video_1_container">
+                         <a href="/img/avasam.mp4" ><img src="/img/aavesham.jpg" class="video_1" alt=""></a>
+                         <a href="/img/avasam.mp4" class="anchor-tag">Aavesham 2024</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/raayan.mp4"><img src="/img/raayan.jpeg" class="video_1" alt=""></a>
+                        <a href="/img/avasam.mp4" class="anchor-tag"> Raayan 2024</a>
+                    </div>
+               </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/leo.mp4"><img src="/img/leo.jpg" class="video_1" alt=""></a>
+                        <a href="/img/leo.mp4" class="anchor-tag" style="padding-left: 40%;">Leo 2023</a>
+                    </div>
+                </div>
+            </div>
+            <div class="first_row">
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/thangalan.mp4"><img src="/img/thangalam.jpeg" class="video_1" alt=""></a>
+                        <a href="/img/thangalam.mp4" class="anchor-tag" style="padding-left: 32%;">Thangalam 2024</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Kanguva.mp4"><img src="/img/kanguva.jpeg" class="video_1" alt=""></a>
+                        <a href="/img/Kanguva.mp4" class="anchor-tag" style="padding-left: 32%;">Kanguva 2024</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/COOLIE.mp4"><img src="/img/coolie.jpg" class="video_1" alt=""></a>
+                        <a href="/img/COOLIE.mp4" class="anchor-tag" style="padding-left: 37%;">Coolie 2025</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">Trending Now</h3>
+            <div class="first_row">
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Deadpool.mp4"><img src="/img/deadpool.png" class="video_1" alt=""></a>
+                        <a href="/img/Deadpool.mp4" class="anchor-tag" style="padding-left: 30%;">Deadpool 2024</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Elite.mp4"><img src="/img/elite.jpg" class="video_1" alt=""></a>
+                        <a href="/img/Elite.mp4" class="anchor-tag" style="padding-left: 39%;">ELITE 2024</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/MoneyHeist.mp4"><img src="/img/moneyheist.jpg" class="video_1" alt=""></a>
+                        <a href="/img/MoneyHeist.mp4" class="anchor-tag" style="padding-left: 39%;">Money Heist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="first_row">
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/JohnWick.mp4"><img src="/img/johnwick.jpg" class="video_1" alt=""></a>
+                        <a href="/img/JohnWick.mp4" class="anchor-tag" style="padding-left: 40%;">John Wick</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/DoctorStrange.mp4"><img src="/img/doctorsrange.jpg" class="video_1" alt=""></a>
+                        <a href="/img/DoctorStrange.mp4" class="anchor-tag" style="padding-left: 39%;">Doctor Strange</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Avatar_3.mp4"><img src="/img/avator3.jpg" class="video_1" alt=""></a>
+                        <a href="/img/Avatar_3.mp4" class="anchor-tag" style="padding-left: 39%;">Avator 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="title">Trending Songs</h3>
+            <div class="first_row">
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Water Packet.mp4"><img src="/img/raayansongs.jpg" class="video_1" alt=""></a>
+                        <a href="/img/Water Packet.mp4" class="anchor-tag" style="padding-left: 28%;">WaterPacket(Raayan)</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Illuminati.mp4"><img src="/img/aveshamsongs.jpeg" class="video_1" alt=""></a>
+                        <a href="/img/Illuminati.mp4" class="anchor-tag" style="padding-left: 32%;">Illuminati(Aavesham)</a>
+                    </div>
+                </div>
+                <div class="border-line">
+                    <div class="video_1_container">
+                        <a href="/img/Mehabooba.mp4"><img src="/img/kgf2.jpg" class="video_1" alt=""></a>
+                        <a href="/img/Mehabooba.mp4" class="anchor-tag" style="padding-left: 30%;">Mehabooba(KGF-2)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer_row_1">
+            <h4>Questions? Call 000-800-919-1694</h4>
+        </div>
+        <div class="footer_row_2">
+            <div class="column-1">
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Terms of Use</a></p>
+                <p><a href="#">Cookie Preferences</a></p>
+            </div>
+            <div class="column-2">
+                <p><a href="#">Help Centre</a></p>
+                <p><a href="#">Privacy</a></p>
+                <p><a href="#">Corporate Information</a></p>
+            </div>
+        </div>
+        <div class="footer_row_3">
+            <div class="dropdown-container">
+                <i class="fa fa-globe" id="globe"></i>
+                <select name="languages" id="languagesSelect" class="language_drop_down">
+                    <option value="English" selected>English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+        </div>
+     </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

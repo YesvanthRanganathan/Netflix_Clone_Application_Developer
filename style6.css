@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+/* selecting navbar making flex to come in horizontal */
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:1% 2%;
+    /* to fix image below we use this */
+    width: 100%;
+    z-index: 0;
+    background-color: black;
+} 
+/* first select the image make 100% */
+.brand_logo{
+    height:100%;
+    width:100%;
+}
+/* next select container make width 100px and height 100%*/
+.navbar_brand{
+    height:100%;
+    width:120px;
+}
+.form_container{
+    /* border: 4px solid red; */
+    padding: 60px 0px 0px 25px;
+    height: 600px;
+}
+.form_container h1{
+    font-size: 40px;
+}
+.box{
+    margin-top: 3%;
+    margin-right: 5%;
+    height: 20px;
+    width: 20px;
+}
+
+.input_field{
+    border: 4px solid gray;
+    border-radius: 15px;
+    background-color: rgb(216, 203, 203);
+    color: black;
+    margin-top:3%;
+    margin-left: 15%;
+    padding-left: 40px;
+    width: 70%;
+    height: 350px;
+    font-size: 25px;
+}
+.input_field_container{
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.input_text_field{
+    height: 40px;
+    width: 30%;
+    font-size: 20px;
+    margin-right: 2%;
+    border-radius: 3px;
+}
+.subscription_button{
+    margin: 4%;
+    margin-left: 15%;
+    height: 40px;
+    width: 130px;
+    background-color: black;
+    color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer_row_2 .column-1,.column-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.footer-section{
+    border-top: none;
+    padding:40px;
+    background-color: black;
+}
+.footer_row_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.footer_row_1{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer_row_2 p {
+    padding-bottom: 10px;
+    margin-right: 200px;
+    }
+.footer_row_2 p a{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.language_drop_down{
+    background:transparent;
+    color: white;
+    border: none;
+}
+.dropdown-container{
+    border: 1px solid gray;
+    width:fit-content;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(49, 47, 47);
+}
+.language_drop_down:focus{
+    outline: none;
+}
+#globe{
+    color: white;
+}

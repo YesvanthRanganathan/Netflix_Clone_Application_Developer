@@ -1,0 +1,120 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#color{
+    background-color: black !important;
+}
+#textcolour a{
+    color: white;
+    margin-left: 20px;
+}
+#textcolour a:hover{
+    color:red;
+}
+.logo-brand{
+    height:100%;
+    width:100%;
+}
+.netflix-logo-container{
+    height:95%;
+    width:100px;
+    margin-right: 35px;
+    margin-left: 25px;
+}
+section{
+    background-color: rgb(43, 41, 41);
+    border: 2px solid  rgb(43, 41, 41);
+}
+.first_row{
+    display: flex;
+    margin: 2% 4%;
+    /* background-color: red */
+}
+.video_1{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.border-line{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 9px;
+    background-color: black;
+    height: 240px;
+    margin-right: 30px;
+}
+.video_1_container{
+    width: 360px;
+    height: 200px;
+    margin-right: 2%;
+}
+.anchor-tag{
+    text-decoration: none;
+    padding-left: 34%;
+    color: blue;
+}
+.title{
+    color: rgb(238, 232, 232);
+    margin-left: 4%;
+}
+.footer_row_2 .column-1,.column-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.footer-section{
+    border-top: none;
+    padding:40px;
+    background-color: black;
+}
+.footer_row_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.footer_row_1{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.footer_row_2 p {
+    padding-bottom: 10px;
+    margin-right: 200px;
+    }
+.footer_row_2 p a{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.language_drop_down{
+    background:transparent;
+    color: white;
+    border: none;
+}
+.dropdown-container{
+    border: 1px solid gray;
+    width:fit-content;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: rgb(49, 47, 47);
+}
+.language_drop_down:focus{
+    outline: none;
+}
+#globe{
+    color: white;
+}
+.premium_photo{
+    height: 100%;
+    width: 100%;
+}
+#photo_container{
+    margin-top: 0%;
+    height: 40px;
+    width: 100%;
+}

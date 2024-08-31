@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reset page</title>
+<link rel="icon" href="/img/icon.jpeg">
+ <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+<header>
+        <nav class="navbar">
+         <div class="navbar_brand">
+            <img src="/img/brandlogo.png" alt="logo" class="brand_logo">
+         </div>
+         <div class="nav_item">
+            <a href="/index1.html"><button class="signin_button">Sign in</button></a>
+         </div>     
+       </nav>
+</header>
+
+    <main>
+        <section class="first">
+            <div class="first_bg_image_container">
+                <img src="/img/crone.png" alt="background-image" class="first_bg_image">
+            </div>
+
+            <div class="first_bg_color_overlay"></div>
+
+            <div class="first_cards">
+                <h1>Forget Email/Password</h1>
+                <p>Please provide this information to help us<br> find your account (all fields required)</p>
+
+                <form action="" method="get">
+                    <p class="para-email">First name on account</p>
+                    <input type="text" placeholder="" class="input-email" required>
+                    <p class="para-email-2">Last name on account</p>
+                    <input type="text" placeholder="" class="input-email-2" required>
+                    <p class="para-email-3">Credit or debit card number on file</p>
+                    <input type="text" placeholder="" class="input-email-3" required>
+
+                    <input type="submit" value="Find Account" class="emailme-button">
+                </form>
+                <a href="/index3.html"><input type="submit" value="Cancel" class="cancel-button"></a>
+                <p class="protected-p">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#" id="learn-more">Learn more.</a>
+                    <span class="hidden-para" style="display:none;">The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</span>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-place">
+        <div class="footer-area">
+            <div class="footer_row_1">
+                <h4>Questions? Call 000-800-919-1694</h4>
+            </div>
+            <div class="footer_row_2">
+                <div class="column-1">
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Terms of Use</a></p>
+                    <p><a href="#">Cookie Preferences</a></p>
+                    <p><a href="#">Help Centre</a></p>
+                    <p><a href="#">Privacy</a></p>
+                    <p><a href="#">Corporate Information</a></p>
+                </div>
+            </div>
+            <div class="footer_row_3">
+                <div class="dropdown-container">
+                    <i class="fa fa-globe tocolor"></i>
+                    <select name="languages" id="languagesSelect" class="language_drop_down">
+                        <option value="English" selected>English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

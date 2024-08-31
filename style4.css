@@ -1,0 +1,395 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: black;
+}
+.brand_logo{
+    width: 100%;
+    height: 100%;
+}
+.navbar_brand{
+    width:90px;
+    height:100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 2% 0 2%;
+    position: relative;
+    top:0%;
+    width:100%;
+    z-index: 10;
+}
+.signin_button{
+    padding: 7px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.first_bg_image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.first_bg_image_container{
+    width:100%;
+    height: 120vh;
+    display: none;
+}
+.first_bg_color_overlay{
+    width:100%;
+    height: 135vh;
+    background-color:rgb(219, 236, 241);
+    position: relative;
+    top:9%;
+    z-index: -1;
+}
+.first_cards{
+    position: absolute;
+    color: black;
+    top:14%;
+    left:5%;
+}
+.first_cards h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.first_cards p{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.input-email:hover{
+    outline: none;
+}
+.input-email{
+    position: absolute;
+    top:90%;
+    height: 39px;
+    width:92%;
+    padding-left: 5%;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    /* margin-bottom: 10%; */
+    font-size: 15px;
+}
+.para-email-2{
+    position: absolute;
+    top: 115%;
+}
+.input-email-2{
+    position: absolute;
+    top:125%;
+    height: 39px;
+    width: 92%;
+    padding-left: 5%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.input-email-2:hover{
+    outline: none;
+}
+.para-email-3{
+    position: absolute;
+    top: 150%;
+}
+.para-email,.para-email-2,.para-email-3{
+    color: gray;
+}
+.input-email-3{
+    position: absolute;
+    top:160%;
+    height: 39px;
+    width: 92%;
+    padding-left: 5%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.input-email-3:hover{
+    outline: none;
+}
+.emailme-button{
+    position: absolute;
+    top:189%;
+    height: 45px;
+    width: 92%;
+    border-radius: 4px;
+    background-color:rgb(36, 149, 187);
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+.cancel-button{
+    position: absolute;
+    top: 220%;
+    height: 45px;
+    width: 92%;
+    border-radius: 4px;
+    background-color:rgb(228, 222, 222);
+    color: black;
+    font-size: 15px;
+    border: none;
+}
+.protected-p{
+    position: absolute;
+    top:255%;
+    color: gray;
+    text-align:justify;
+    font-size: 5px;
+}
+.protected-p a{
+    color: gray;
+}
+.footer-place{
+    position: relative;
+}
+.footer-area{
+    background-color: rgb(61, 59, 59);
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 15%;
+    color: gray;
+}
+.footer_row_2{
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+    margin-top: 10%;
+}
+.footer_row_2 a{
+    color: gray;
+    text-decoration: none;
+}
+.footer_row_2 p a{
+    padding-bottom: 50px;
+}
+.footer_row_3{
+    padding-top: 40px;
+}
+.dropdown-container{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}
+.language_drop_down{
+    border: none;
+    background-color: rgb(61, 59, 59);
+    color: white;
+}
+.language_drop_down:focus{
+    outline: none;
+}
+@media (min-width:768px) {
+    body{
+        background-color:black;
+        color: white;
+    }
+    .navbar_brand{
+        width:160px;
+        height:100%;
+    }
+    .first_bg_color_overlay{
+        width:53%;
+        height: 82%;
+        position: absolute;
+        top:19%;
+        left:24%;
+        z-index: 11;
+        background-color: white;
+    }
+    .first_cards{
+        color: black;
+        z-index: 12;
+        top:25%;
+        left: 29%;
+        padding-left: 5px;
+    }
+    .first_cards h1{
+       font-size: 35px;
+       font-weight: 300;  
+    }
+    .first_cards p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .input-email,.input-email-2,.input-email-3,.emailme-button,.cancel-button{
+        width:89%;
+        padding: 15px;
+    }
+    .para-email-2{
+        position: absolute;
+        top: 118%;  
+    }
+    .input-email-2{
+        position: absolute;
+        top:130%;
+    }
+    .para-email-3{
+        position: absolute;
+        top: 157%;
+    }
+    .input-email-3{
+        position: absolute;
+        top: 172%;
+    }
+    .emailme-button{
+        top:205%;
+    }
+    .cancel-button{
+        top:235%;
+    }
+    .protected-p{
+        top:280%;
+    }
+    .footer-place
+    {
+        position: absolute;
+        top:145%;
+    }
+    
+    .footer-area{
+        background-color: black;
+        /* border: 1px solid blue; */
+        margin-left: 5%;
+        width:120%;
+        height: 100%;
+        padding-left: 0%;
+
+    }
+    .footer_row_1{
+        padding-left: 1%;
+        /* border: 1px solid green; */
+    }
+    .footer_row_2{
+        display: flex;
+        /* border: 1px solid red; */
+        padding:10px;
+        height:100px;
+        margin-top: 3%;
+    }
+    .footer_row_2 .column-1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10%;
+        padding:0 0 10% 0;
+    }
+    .column-1 p{
+        /* border: 1px solid red; */
+        margin-bottom: 35px;
+    }
+
+    .footer_row_3{
+        padding-left:1%;
+        padding-top: 10px;
+        /* border: 1px solid green;    */
+    }
+    .language_drop_down{
+        background-color: black;
+        color: gray;
+    }
+    .tocolor{
+        color: gray;
+    }
+    
+}
+@media (min-width:1024px){
+    .first_bg_image_container{
+        display: block;
+        height: 110vh;
+    }   
+    .first_bg_color_overlay{
+        width: 35%;
+        left:31%;
+        background-color: #f3f3f3;
+        height: 84%;
+    }
+    .first_cards h1{
+        font-size: 35px;
+        font-weight: 570;
+    }
+    .first_cards{
+        top:22%;
+        left: 34%;
+    }
+    .first_cards p{
+        font-size: 20px;
+        font-weight: 300;
+        color: gray;
+        letter-spacing: 1px;
+    }
+    .form_container{
+        position: absolute;
+        left: 10%;
+        font-size: 22px;
+        font-weight: 300;
+        color: gray; 
+       }
+    .first_cards h4{
+        padding-top: 5%;
+        color: gray;
+        letter-spacing: 1px;
+    }
+    .input-email{
+        top:90%;
+        padding: 20px;
+    }
+    .para-email-2{
+        top: 125%;
+    }
+    .input-email-2{
+        top: 141%;
+    }
+    .para-email-3{
+        top: 172%;
+    }
+    .input-email-3{
+        top: 189%;
+    }
+    .input-email,.emailme-button,.input-email-2,.input-email-3,.cancel-button{
+        width:100%;
+    }
+    .emailme-button{
+        top:220%;
+    }
+    .cancel-button{
+        top:251%;
+    }
+    .footer-area{
+        width:161%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 40%;
+    }
+    .footer_row_2 p{
+        padding-bottom: 5px;
+        height: 1px;
+    }
+    .footer_row_2 p a{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 0%;
+    }
+    .footer_row_3{
+        padding-left: 1%;   
+    }
+    .footer_row_2 .column-1{
+        padding:0 0 0% 0;
+    }
+    .protected-p{
+        top:310%;
+    }
+}
